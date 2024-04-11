@@ -21,7 +21,11 @@ function LoginForm({ username, password, setUsername, setPassword, onSubmit }) {
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </div>
-            <button type="submit">Login</button>
+            <div className='flex justify-center my-4'>
+                <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+                    Login
+                </button>
+            </div>
         </form>
     );
 }

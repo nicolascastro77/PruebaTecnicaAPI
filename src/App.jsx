@@ -22,23 +22,19 @@ function App() {
       <Router>
         <Navbar setIsLoggedIn= {setIsLoggedIn} />
         <Routes>
+        <Route
+            path="PruebaTecnicaAPI/"
+            element={<Home />}
+          />
           <Route
-            exact
             path="login"
             element={isLoggedIn ? <Navigate replace to={"/names"} /> : <LoginPage setIsLoggedIn={setIsLoggedIn} />}
           />
           <Route
-            exact
-            path="/"
-            element={<Home />}
-          />
-          <Route
-            exact
             path="/contact"
             element={<Contact />}
           />
           <Route
-            exact
             path="names"
             element={isLoggedIn ? <NameListPage /> : <LoginPage setIsLoggedIn={setIsLoggedIn} />}
           />

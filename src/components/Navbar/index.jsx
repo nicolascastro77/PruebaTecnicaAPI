@@ -24,7 +24,7 @@ function Navbar({ setIsLoggedIn }) {
                     <h1 className=" ml-6 text-white text-lg font-semibold">Recarga en nuestra aplicacion!</h1>
                 </div>
                 <ul className="flex space-x-4">
-                    <li><Link to="/" className="text-white hover:text-gray-300">Inicio</Link></li>
+                    <li><Link to="/PruebaTecnicaAPI" className="text-white hover:text-gray-300">Inicio</Link></li>
                     {/* Muestra el botón de cierre de sesión solo si el usuario ha iniciado sesión */}
                     {isLoggedIn && <li><button onClick={handleLogout} className="text-white hover:text-gray-300">Cerrar sesión</button></li>}
                     {/* Si el usuario no ha iniciado sesión, muestra el enlace al login */}
